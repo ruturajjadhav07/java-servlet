@@ -63,18 +63,26 @@ public class main extends HttpServlet {
 	         out.println("background-color: grey;");
 	         out.println("width : 1500px;");
 	         out.println("position: fixed;");
+	         out.println("top:0");
 	         out.println("overflow: hidden;");
 	         out.println("}");
 	         
 	         out.println("nav.nav {");
-	         out.println("margin-top: -20px;");
+	         out.println("margin-top: -73px;");
 	         out.println("padding: 0px 10px 0px 10px;");
 	         out.println("margin-left: -8px;");
 	         out.println("}");
 	         
+	         out.println("thead {");
+	         out.println("background: beige;");
+	         out.println("position: sticky;");
+	         out.println("top: 77px;");
+	         out.println("}");
+	         
 	         out.println("body{color: navy;}");
 	         out.println("table {width: 800px ;");
-	         out.println("margin-left:330");
+	         out.println("margin-left:330px;");
+	         out.println("margin-top:73px;");
 	         out.println("}");
 	         
 	         out.println("th, td { text-align: center;");
@@ -118,14 +126,16 @@ public class main extends HttpServlet {
 	         out.println("<h1><button><a href='create.html' class='l1'>Add Book</a></button></h1>");
 	         out.println("</nav>");
 	         
-	         out.println("<table border='1' style='margin-top: 20px;'>");
-	         out.println("<tbody>");
+	         out.println("<table border='1' >");
+//	         out.println("<tbody>");
+	         out.println("<thead>");
 	         out.println("<tr><th><h1>Book NO</h1></th>");
 	         out.println("<th><h1>Book Name</h1></th>");
 	         out.println("<th><h1>Book Price</h1></th>");
 	         out.println("<th><h1>Update</h1></th>");
 	         out.println("<th><h1>Delete</h1></th></tr>");
-	         
+	         out.println("</head>");
+	         out.println("<tbody>");
 	         
 //	         out.println("</table>");
 	         
