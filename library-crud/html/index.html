@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Main Library</title>
+<style>
+	
+	*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("img1.png");
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    /*color: white;*/
+    gap: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    padding: 4px 11px;
+    font-size: 16px;
+    border-radius: 9px;
+    /* background: black;
+    color: white; */
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: gold;
+}
+
+	
+</style>
+</head>
+<body>
+	 <form action="main" method="post">
+        <div>
+            <h1>Welcome to MitWpu library.</h1>
+            <h2>This is just for an Admin to <br>perform CRUD operation.</h2>
+            <h3>Click below button to see books.</h3>
+            <input type="submit" value="Click Me">
+        </div>
+    </form>
+</body>
+</html>
